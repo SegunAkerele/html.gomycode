@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOMYCODE HTML ASSIGNMENT</title>
+    
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+/* --------- header ----------*/
+.header{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/hexagon.webp);
+    position: relative;
+}
+
+.text-box{
+    width: 100%;
+    color: white;
+    left: 50%;
+    text-align: center;
+    padding: 15%;
+}
+
+.text-box h1{
+    font-size: 70px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: orangered;
+}
+
+.logo{
+    width: 200px;
+    height: 70px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    position:absolute;
+    padding: 10px;
+}
+
+/*---------- nav ----------*/
+nav{
+    width: 100%;
+    text-align: right;
+}
+
+nav ul{
+    background: rgb(7, 7, 26);
+    width: 100%;
+    margin-top: 0;
+    height: 80px;
+    padding-top: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+    color: white;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
+
+/*---------- hero-button ---------*/
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid orangered;
+    padding: 12px 34px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px orangered;
+    background: orangered;
+    transition: 1s;
+}
+
+/*------------- about-section -----------*/
+
+.about-section{
+    width: 80%;
+    margin: auto;
+}
+
+.about1{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.about1 h1{
+    font-size: 50px;
+    color: orangered;
+}
+
+.about1 p{
+    font-size: 25px;
+}
+
+.about, .hero-btn{
+    margin-bottom: 5%;
+    color: rgb(7, 7, 26);
+}
+
+.aboutme{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about blockquote{
+    padding-top: 50px;
+    font-size: 30px;
+    color: rgb(4, 11, 88);
+}
+
+/*---------- work section ----------*/
+.work-section{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.work-section h1{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+
+.work{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: orangered;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/*---------- Resume Section ---------*/
+
+.resume{
+    width: 80%;
+    margin: auto;
+    background-color: aqua;
+    height: 500px;
+}
+
+.list h1{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 3%;
+}
+
+.list1{
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 10%;
+}
+
+
+/*-------- Contact Section --------*/
+
+.cta{
+    width: 100;
+    background-image: linear-gradient(rgba(4,6,30,0.7),rgba(4,6,30,0.7)),url(Image/write-down-themes.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    font-weight: 50px;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.cta p{
+    font-size: 30px;
+    font-weight: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-btn7{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid orangered;
+    padding: 12px 34px;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.hero-btn7:hover{
+    background: orangered;
+    transition: 1s;
+}
+
+/*--------- form ---------*/
+.form{
+    width: 20%;
+    margin: auto;
+    border: 3px solid black;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: orangered;
+    background-color: rgb(4, 11, 88);
+}
+
+.back{
+    display: inline-block;
+    border: 2px solid orangered;
+    padding: 12px 34px;
+    margin-left: 50px;
+}
+
+
+/*--------- footer ----------*/
+.foot{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.foot p{
+    margin-top: 2%;
+    font-size: 20px;
+    font-weight: 10px;
+    padding-top: 40px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!---------- Header ----------->
+    <div class="header">
+        <nav id="navbar">
+            <img src="Image/schoolway2.png" class="logo">
+            <ul id="menu">
+                <li ><a href="index.html">HOME</a></li>
+                <li ><a href="ABOUT.html">ABOUT</a></li>
+                <li ><a href="WORK.html">WORK</a></li>
+                <li ><a href="RESUME.html">RESUME</a></li>
+                <li ><a href="CONTACT.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div name="TOP"></div>
+        <div class="text-box">
+            <h1>SEGUN'S WEB DEVELOPMENT<br> CHECKPOINT3</h1>
+            <p>Checkpoint is a level where you are instructed<br>
+            to do a project based on what you have been taught.</p><br>
+            <a href="https://gomycode.com" class="hero-btn">Connect With GOMYCODE Today</a>
+        </div>   
+    </div>
+
+
+    <!------------ About Section --------->
+    <section class="about-section">
+            <div class="about1">
+                <h1>Hi Everyone! Welcome to My First Website.</h1>
+                <p>Segun Akerele is my name. I am your front-end web developer.<br>
+                There are many things we can do together.</p><br>
+                <a href="CONTACT.html" class="hero-btn">Contact Me</a><br>
+            </div>
+        <div class="aboutme">
+            <div class="about">
+                <video width="550" height="300" controls>
+                    <source src="Image/segunintro.mp4">
+                </video>
+            </div>
+            <div class="about">
+                <blockquote>There are no limitations except the<br> 
+                    ones we set for ourselves.<br> <cite>Segun Akerele</cite></blockquote>
+            </div><br>
+        </div>
+        <hr>
+        <br>
+        <hr>
+    </section>
+
+
+    <!----------- Work Section ---------->
+    <section class="work-section">
+        <h1>I Have Over a Decade Experience</h1>
+        <div class="work">
+            <div class="work1">
+                <p>I am a teaching professional.</p>
+                <img src="Image/possible-379215_1280.webp" width="500" height="650" alt="Segun having a good 
+                moment with some of his students"><br><br>
+                <a href="RESUME.html" class="hero-btn">Learn More</a>
+            </div>
+            <div class="work1">
+                <p>I also organise educational programmes for students</p>
+                <img src="Image/20230305_084442.jpg" width="500" height="650" alt="Segun at an event giving a speech.">
+                <br><br><a href="RESUME.html" class="hero-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!----------- Resume Section --------->
+    <section class="resume">
+        <div class="list">
+            <h1>Little About My Journey</h1><br>
+        </div>
+            <div class="list1">
+                <ul>
+                    <li>Seven Stars School</li>
+                    <li>Secondary Commercial School</li>
+                    <li>Alakunre Comprehensive School</li>
+                </ul><br><br>
+                <ol>
+                    <li>Seven Stars School</li>
+                    <li>Secondary Commercial School</li>
+                    <li>Alakunre Comprehensive School</li>
+                </ol>
+            </div><br><br><br><br>
+            <div class="list1">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>2018</td>
+                            <td>2012</td>
+                            <td>2008</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Seven Stars School</td>
+                            <td>Secondary Commercial School</td>
+                            <td>Alakunre Comprehensive School</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </section>
+
+
+    <!----------- Contact Section --------->
+    <section class="cta">
+        <h1>New Resources in Your Inbox</h1>
+        <p>An Update From Segun</p>
+        <a href="" class="hero-btn7">SUBSCRIBE</a>
+    </section>
+
+
+    <!---------- Form ----------->
+    <form class="form">
+        <fieldset>
+            <legend>Contact</legend>
+            First Name:<br>
+            <input type="text" name="first-name" placeholder="Exter your first name here"><br><br>
+            Last Name:<br>
+            <input type="text" name="last-name" placeholder="Exter your last name here"><br><br>
+            <textarea name="description"></textarea><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <div class="back">
+        <a href="#TOP">BACK TO TOP</a><br>
+    </div>
+    <hr>
+
+    <!----------- Footer ---------->
+
+    <footer class="foot">
+        <p>&copy; 2023. Segun_Assignment. All Right Reserved.</p>
+    </footer>
+    
+</body>
+</html>
