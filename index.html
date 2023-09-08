@@ -174,8 +174,8 @@ nav ul li:hover::after{
 .resume{
     width: 80%;
     margin: auto;
-    background-color: aqua;
-    height: 500px;
+    background-color: orangered;
+    height: 600px;
 }
 
 .list h1{
@@ -190,6 +190,15 @@ nav ul li:hover::after{
     padding-left: 10%;
 }
 
+/*--------- table --------*/
+td, th, tf{
+    border: 1px solid;
+    padding: 5px 10px
+}
+
+.list2{
+    position: relative;
+}
 
 /*-------- Contact Section --------*/
 
@@ -355,23 +364,70 @@ nav ul li:hover::after{
                     <li>Alakunre Comprehensive School</li>
                 </ol>
             </div><br><br><br><br>
-            <div class="list1">
-                <table>
+            <div class="list2">
+                <table style=" border-spacing: 0; margin: 0 auto;">
+                    <caption>My Work Time-Table</caption>
+                    <colgroup>
+                        <col style="background-color: white;"/>
+                        <col/>
+                        <col style="background-color: blue;">
+                    </colgroup>
                     <thead>
                         <tr>
-                            <td>2018</td>
-                            <td>2012</td>
-                            <td>2008</td>
+                            <td >Mon</td>
+                            <td>&nbsp;</td>
+                            <td>Wed</td>
+                            <td>Thur</td>
+                            <td>Fri</td>
+                            <td>&nbsp;</td>
+                            <td>Sat</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Seven Stars School</td>
-                            <td>Secondary Commercial School</td>
-                            <td>Alakunre Comprehensive School</td>
+                            <td>5</td>
+                            <td>-</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>9</td>
+                            <td>-</td>
+                            <td>5</td>
                         </tr>
                     </tbody>
-                </table>
+                    <tbody>
+                        <tr>
+                            <td>6</td>
+                            <td>-</td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>-</td>
+                            <td>7</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>7</td>
+                            <td>-</td>
+                            <td>8</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>18</td>
+                            <td>-</td>
+                            <td>20</td>
+                            <td>18</td>
+                            <td>27</td>
+                            <td>-</td>
+                            <td>15</td>
+                        </tr>
+                    </tfoot>
+                </table>            
             </div>
     </section>
 
